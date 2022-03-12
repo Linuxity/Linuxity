@@ -18,14 +18,14 @@ TILL TODAY!!!
 
 Today we are introducing the easiest way to get programs for linux.
 
-==================================================================================================================================================================
+============================================================================================================
 
 IMPORTANT!!!!!
 
 AT THE MOMENT WE ONLY HAVE FOR ONE BRANCH OF LINUX: UBUNTU. IN THE FUTURE WE WILL TRY TO GET MORE BASE DISTROS TO HAVE THE EASE OF USE WHEN YOU WANT TO GET A LINUX DISTRO.
 IN THE FUTURE ON 2023/24 WE ARE LOOKINBG TO MAYBE SUPPORT OTHER BASE DISTROS LIKE : ARCH,REDHAT AND MANY MORE.
 
-==================================================================================================================================================================
+=============================================================================================================
 
 You can support us by donating or helping by submiting scripts/codes that people can use to get a program that they might want using the terminal on their prefered flavour/distro of linux.
 
