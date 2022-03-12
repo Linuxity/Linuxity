@@ -1,0 +1,543 @@
+==============
+==APPSTORES===
+==============
+sudo apt-get install synaptic
+sudo apt-get install mintinstall
+
+elementary appcenter
+=====================================
+sudo add-apt-repository ppa:elementary-os/daily
+sudo apt update
+
+sudo apt install appcenter
+
+snap store
+=====================================
+sudo snap install snap-store
+
+
+gnome software
+======================================
+sudo apt install gnome-software
+
+
+app outlet
+========================================
+wget https://appoutlet.herokuapp.com/download/deb -O app-outlet.deb
+sudo dpkg -i app-outlet.deb
+
+
+
+wget https://appoutlet.herokuapp.com/download/deb -O app-outlet.deb
+sudo dpkg -i app-outlet.deb
+
+
+wget https://appoutlet.herokuapp.com/download/appimage -O app-outlet.AppImage
+sudo chmod +x app-outlet.AppImage
+./app-outlet.AppImage
+
+===================
+==amd gpu drivers==
+=====================================
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt update && sudo apt -y upgrade
+
+uninstall==
+
+sudo apt install ppa-purge
+sudo ppa-purge ppa:oibaf/graphics-drivers
+
+==================
+==nvidia drivers==
+=========================================
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-440
+sudo reboot
+
+or  ======
+
+sudo ubuntu-drivers autoinstall
+sudo reboot
+
+
+==================
+==game software==
+======================================
+steam ==
+sudo apt install steam
+
+======================================
+
+epic games alternative ===
+
+Heroic :
+Go to this link to download the appimage : 
+https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases
+or=== 
+https://drive.google.com/drive/folders/1sndwUM2Sinad5oKtBMqIOz6ZaHo-bzfY?usp=sharing
+
+
+or===
+
+sudo add-apt-repository -y ppa:apt-fast/stable
+sudo apt install -y apt-fast
+apt-fast install -y heroic
+
+or===
+
+bash <(wget -O- https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/main/madrepo.sh)
+
+Lutris = Lutris is a game launcher that allows you to play games from Steam , Epic Games , GOG , and more and at the same time even retro/old games with the power of retroarch.
+sudo dpkg --add-architecture i386 
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+================================================================================================
+= now depending of what ubuntu version you have, you have to get the right one for you on this = 
+= step											       =
+================================================================================================
+
+Ubuntu 21.10 	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main'
+Ubuntu 21.04 	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
+Ubuntu 20.10 or Ubuntu 20.04	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ groovy main'
+
+Linux Mint 20.x    sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+
+Ubuntu 18.04 or Linux Mint 19.x     sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main' 
+
+next step===
+
+sudo apt update
+
+===============================================================
+=                                                             =
+= now get the command for the branch that you want to install =
+=							      =
+===============================================================
+
+Stable branch 	
+
+sudo apt install --install-recommends winehq-stable
+
+Development branch 	
+
+sudo apt install --install-recommends winehq-devel
+
+Staging branch 	
+
+sudo apt install --install-recommends winehq-staging
+
+== NOW YOU HAVE TO INSTALL LUTRIS ==
+
+sudo add-apt-repository ppa:lutris-team/lutris
+
+
+sudo apt update
+sudo apt install lutris
+
+
+POP! SHOP===
+
+sudo apt-get update
+sudp apt-get upgrade
+sudo apt-get install python3 git
+git clone https://github.com/pop-os/repoman.git
+cd repoman
+sudo python3 setup.py install
+sudo apt-get install gettext libappstream-dev libflatpak-dev libgee-0.8-dev libgranite-dev libgtk-3-dev libhandy-1-dev libjson-glib-dev libpackagekit-glib2-dev libpolkit-gobject-1-dev libsoup2.4-dev libxml2-dev libxml2-utils meson valac
+git clone https://github.com/pop-os/shop.git
+cd shop/
+meson build --prefix=/usr
+cd build
+ninja
+sudo ninja install
+io.elementary.appcenter
+
+
+=============================================
+== 					   ==
+==   USEFUL SOFTWARE THAT YOU SHOULD HAVE  ==
+==					   ==
+=============================================
+
+===========================
+==                       ==
+==     IMAGE EDITORS     ==
+==			 ==
+===========================
+
+==GIMP==
+
+sudo snap install gimp
+
+==SNAP==
+
+sudo apt update
+sudo apt install snapd
+
+INKSCAOE==
+
+sudo apt install inkscape
+
+OR====
+
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt update
+sudo apt upgrade -y
+
+OR====
+
+sudo apt-get install inkscape
+
+===========================
+==                       ==
+==     AUDIO EDITORS     ==
+==			 ==
+===========================
+
+==AUDACITY==
+
+sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+sudo apt-get update
+sudo apt-get install audacity
+
+==LMMS==
+
+sudo apt-get install lmms
+
+OR==
+
+apt-get install lmms
+
+
+============================
+==                        ==
+==     EMAIL SOFTWARE     ==
+==			  ==
+============================
+
+==EVOLUTION== Email software
+
+sudo apt-get remove evolution
+sudo apt-get update
+sudo apt-get install evolution
+sudo apt-get install evolution-ews
+
+
+==THUNDERBIRD==
+
+sudo apt install thunderbird
+
+
+===========================
+==                       ==
+==     COMMUNICATION     ==
+==			 ==
+===========================
+
+==SIGNAL==
+
+sudo snap install signal-desktop
+
+==ELEMENT==
+
+sudo wget -O /usr/share/keyrings/riot-im-archive-keyring.gpg https://packages.riot.im/debian/riot-im-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/riot-im-archive-keyring.gpg] https://packages.riot.im/debian/ default main" | sudo tee /etc/apt/sources.list.d/riot-im.list
+sudo apt update
+sudo apt install element-desktop
+
+================================
+==                            ==
+==     RECORDING SOFTWARE     ==
+==			      ==
+================================
+
+==KAZAM==
+
+sudo add-apt-repository ppa:sylvain-pineau/kazam
+sudo apt-get update
+sudo apt-get install kazam
+
+==OBS==
+
+sudo apt install ffmpeg
+sudo apt install v4l2loopback-dkms
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+
+==FLAMESHOT==
+
+sudo apt install flameshot
+wget https://github.com/flameshot-org/flameshot/releases/download/v0.9.0/flameshot-0.9.0-1.ubuntu-20.04.amd64.deb
+dpkg -i flameshot-0.9.0-1.ubuntu-20.04.amd64.deb
+
+==KSNIP==
+
+sudo add-apt-repository ppa:ubuntuhandbook1/ksnip
+sudo apt install ksnip
+
+================================
+==                            ==
+==     SYSTEM MAINTANANCE     ==
+==			      ==
+================================
+
+==STACER==
+
+wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.4/Stacer_1.0.4_i386.deb
+sudo dpkg --install Stacer_1.0.4_i386.deb
+
+==HTOP==
+
+sudo apt install htop
+
+=============================
+==                         ==
+==     GAMING SOFTWARE     ==
+==			   ==
+=============================
+
+==DISCORD==
+
+sudo snap install discord
+
+================================
+==                            ==
+==     MUSIC APPLICATIONS     ==
+==			      ==
+================================
+
+==AUDATIOS==
+
+sudo add-apt-repository ppa:ubuntuhandbook1/apps
+sudo apt-get update
+sudo apt install audacious audacious-plugins
+
+==VLC==
+
+sudo apt install VLC
+sudo apt-get install VLC
+
+==AUDACITY==
+
+sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+sudo apt-get update
+sudo apt-get install audacity
+
+==PULSE AUDIO==
+
+sudo apt update
+sudo apt install pulseaudio
+
+THEN==
+
+sudo apt install pavucontrol
+
+
+==========================
+==                      ==
+==     MEDIA SERVER     ==
+==		        ==
+==========================
+==KODI==
+
+sudo add-apt-repository ppa:team-xbmc/ppa
+sudo apt update && sudo apt install kodi
+
+
+==PLEX==
+
+wget https://downloads.plex.tv/plex-media-server-new/1.19.3.2852-219a9974e/
+debian/plexmediaserver_1.19.3.2852-219a9974e_amd64.deb
+sudo dpkg –i plexmediaserver_1.19.3..2852-219a9974e_amd64.deb
+sudo systemctl enable plexmediaserver.service
+sudo systemctl start plexmediaserver.service
+sudo systemctl status plexmediaserver.service
+http://plex_server_IP:32400/web
+sudo apt update
+sudo apt-get --only-upgrade install plexmediaserver
+
+===========================
+==                       ==
+==     VIDEO EDITORS     ==
+==			 ==
+===========================
+==KDENLIVE==
+
+sudo snap install kdenlive
+
+OR===
+
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
+sudo apt update
+sudo apt install kdenlive
+
+==OPENSHOT==
+
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt-get update
+sudo apt-get install openshot-qt
+
+=============================
+==                         ==
+==     MEDIA CONVERTER     ==
+==			   ==
+=============================
+
+==HANDBREAK==
+
+sudo apt-get update
+sudo apt-get install handbrake
+
+==SOUNDCONVERTER==
+
+sudo add-apt-repository ppa:xtradeb/apps
+sudo apt install soundconverter
+
+
+===================================
+==                               ==
+==     BACKUP/RECOVERY TOOLS     ==
+==			         ==
+===================================
+
+==TIMESHIFT==
+
+TO INSTALL===
+
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt update
+sudo apt install timeshift
+
+==BACULA==
+
+sudo apt-get install bacula -y
+sudo chown -R bacula:bacula /data
+sudo nano /etc/bacula/bacula-sd.conf
+
+HOW TO START AND USE===
+
+sudo systemctl start bacula-sd
+sudo systemctl enable bacula-sd
+
+HOW TO CONFIGURE===
+
+sudo nano /etc/bacula/bacula-dir.conf
+
+HOW TO VERIFY BACKUP JOB==
+
+sudo bconsole
+run
+
+
+
+===========================
+==                       ==
+==     PDF EDITORS       ==
+==			 ==
+===========================
+
+==LIBREOFFICE DRAW==
+
+sudo apt update
+sudo apt install libreoffice
+libreoffice --version
+
+OR===
+
+sudo add-apt-repository ppa:libreoffice
+sudo apt update
+sudo apt install libreoffice
+libreoffice --version
+
+
+==PDF STUDIO==
+
+DOWNLOAD LINK = https://download.qoppa.com/pdfstudio/PDFStudio_linux64.sh
+
+cd Downloads" or replace "Downloads" with the directory where you downloaded the installer
+sh ./PDFStudio_linux64.sh.
+This will start the installer.
+
+==============================
+==                          ==
+==     CODE/TEXT EDITOR     ==
+==			    ==
+==============================
+
+==LYX==
+
+sudo add-apt-repository ppa:lyx-devel/release.
+sudo apt-get update (update so that apt is aware of the new PPA)
+sudo apt-get install lyx (install from the PPA)
+
+==TEXMAKER==
+
+sudo apt install texmaker
+
+==SIMPLENOTE==
+
+sudo apt install snapd
+sudo snap install simplenote
+
+==LAVERNA==
+
+wget https://github.com/Laverna/laverna/releases/download/0.7.51/laverna-0.7.51-linux-x64.zip
+
+unzip laverna-0.7.51-linux-x64.zip
+
+sudo ./laverna
+
+============================================
+==                                        ==
+==     COMMUNICATION AND PRODUCTIVITY     ==
+==			                  ==
+============================================
+
+==SLACK==
+
+sudo snap install slack --classic
+
+==FRANZ==
+
+sudo apt install flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install flathub com.meetfranz.Franz
+flatpak run com.meetfranz.Franz
+
+==VIRTUALBOX==
+
+sudo apt install virtualbox
+virtualbox
+
+==AUTHY==
+
+sudo apt update
+sudo apt install snapd
+sudo snap install authy
+
+=================================================
+
+
+
